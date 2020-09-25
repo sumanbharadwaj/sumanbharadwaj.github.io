@@ -4,7 +4,7 @@ name: night
 
 on:
   schedule:
-    - cron: "45 5 * * *"
+    - cron: "50 5 * * *"
 
 jobs:
   build:
@@ -15,13 +15,9 @@ jobs:
 
       - name: Trigger night mode
         run: |
-          git config --local user.email 'action@github.com'
-          git config --local user.name 'sumanbharadwaj'
-          sed -i 's/white/black/g'  $GITHUB_WORKSPACE/_sass/_base.scss
-          sed -i 's/black;/white;/g'  $GITHUB_WORKSPACE/_sass/_base.scss
+          git config --local user.email github-actions@github.com
+          git config --local user.name github-actions
+          sed -i 's/white/black/g' $GITHUB_WORKSPACE/_sass/_base.scss
+          sed -i 's/black;/white;/g' $GITHUB_WORKSPACE/_sass/_base.scss
           git commit -m "Trigger night mode" -a
-          
-      - name: Push changes
-        uses: actions/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git push
