@@ -1,0 +1,25 @@
+# Toggle night mode
+
+name: night
+
+on:
+  schedule:
+    - cron: "55 5 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Trigger night mode
+        run: |
+          git config --local user.email github-actions@github.com
+          git config --local user.name github-actions
+          which sed
+          cat $GITHUB_WORKSPACE/_sass/_base.scss
+          sed -i 's/white/black/g' $GITHUB_WORKSPACE/_sass/_base.scss
+          sed -i 's/black;/white;/g' $GITHUB_WORKSPACE/_sass/_base.scss
+          git commit -m "Trigger night mode" -a
+          git push
