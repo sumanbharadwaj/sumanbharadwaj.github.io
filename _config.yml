@@ -1,0 +1,30 @@
+# Site settings
+
+title: "Suman Bharadwaj"
+description: ""
+
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+resume_avatar:                  "true"
+resume_name:                    "Suman Bharadwaj"
+resume_title:                   "Product + Sales + Adoption"
+
+resume_header_contact_info:     "San Francisco Bay Area, CA • sumanbharadwaj1602@gmail.com"
+display_header_contact_info:    "true"
+
+resume_header_intro: "<p>Experienced SaaSy professional, passionate about helping my clients derive maximum value from their investment in the products and solutions I help sell.</p>"
+
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_skills:          true
+resume_section_links:           false
+resume_section_top:             false
+
+resume_social_links:
+  resume_linkedin_url:          "https://www.linkedin.com/in/suman-bharadwaj"
+resume_print_social_links:      true
+
+resume_theme:                   default
