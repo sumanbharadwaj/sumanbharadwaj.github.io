@@ -1,12 +1,12 @@
 # Skills
-- skill: Customer success
-  description: Customer training & support, Customer onboarding, Product adoption, Customer experience, Relationship building
+- skill: Customer Success
+  description: Product Training & Support, Customer Onboarding, Product Adoption, Customer Experience, Relationship Building, Problem Solving
 
-- skill: Sales & Marketing
-  description: Customer retention, upsell & renewals, Presales, Account management, Product marketing, Customer pilots, Career fairs
+- skill: Sales 
+  description: Customer Retention, Renewals & Upsell, Pre-sales, Account Management, Storytelling
 
 - skill: Human Resources
-  description: Sourcing, Talent acquision, Recruiting, Career fairs, University relations, HR Operations, New hire onboarding
+  description: Sourcing, Talent Acquision, Recruiting, Career Fairs, University Relations, HR Operations, New-hire Onboarding, HRIS
 
 - skill: Tools
   description: Hiretual AI, LinkedIn Recruiter, Workday, Salesforce, Jira, BMC, DocuSign, Microsoft suite, Google suite, SurveyMonkey, Intercom, Slack, Taleo, PeopleSoft, iCIMS, E-Verify, Greenhouse, Trello
